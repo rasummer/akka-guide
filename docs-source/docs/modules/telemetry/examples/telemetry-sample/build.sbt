@@ -29,7 +29,7 @@ enablePlugins(Cinnamon)
 
 // tag::telemetry-javaagent-docker[]
 enablePlugins(JavaAppPackaging, DockerPlugin)
-dockerBaseImage := "docker.io/library/adoptopenjdk:11-jre-hotspot"
+dockerBaseImage := "docker.io/library/eclipse-temurin:17.0.3_7-jre-jammy"
 dockerUsername := sys.props.get("docker.username")
 dockerRepository := sys.props.get("docker.registry")
 // end::telemetry-javaagent-docker[]

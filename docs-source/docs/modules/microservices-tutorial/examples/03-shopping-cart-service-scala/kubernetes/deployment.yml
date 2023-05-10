@@ -18,16 +18,14 @@ spec:
     spec:
       containers:
         - name: shopping-cart-service
+          # use specific image version from docker publish
           image: shopping-cart-service:latest
-          # remove for real clusters, useful for minikube
-          imagePullPolicy: Never
-          # resources tested with default kubernetes instance on docker desktop, these will need to be increased
-          #   and tuned for production environments!
+          # these will need to be increased tuned for production environments!
           resources:
             limits:
-              memory: "1Gi"
+              memory: "2Gi"
             requests:
-              memory: "1Gi"
+              memory: "2Gi"
               cpu: "1000m"
           readinessProbe:
             httpGet:

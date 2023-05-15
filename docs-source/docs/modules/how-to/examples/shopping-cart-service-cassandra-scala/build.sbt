@@ -26,15 +26,15 @@ run / javaOptions ++= sys.props
   .fold(Seq.empty[String])(res => Seq(s"-Dconfig.resource=$res"))
 Global / cancelable := false // ctrl-c
 
-val AkkaVersion = "2.8.0"
-val AkkaHttpVersion = "10.5.0"
-val AkkaManagementVersion = "1.2.0"
+val AkkaVersion = "2.8.2"
+val AkkaHttpVersion = "10.5.2"
+val AkkaManagementVersion = "1.4.0"
 // tag::akka-persistence-cassandra[]
 val AkkaPersistenceCassandraVersion = "1.1.0"
 
 // end::akka-persistence-cassandra[]
 val AlpakkaKafkaVersion = "4.0.2"
-val AkkaProjectionVersion = "1.3.1"
+val AkkaProjectionVersion = "1.4.0"
 val AkkaDiagnosticsVersion = "2.0.0"
 
 enablePlugins(AkkaGrpcPlugin)

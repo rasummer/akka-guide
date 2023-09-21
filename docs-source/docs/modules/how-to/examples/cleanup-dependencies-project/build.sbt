@@ -26,7 +26,7 @@ run / javaOptions ++= sys.props
   .fold(Seq.empty[String])(res => Seq(s"-Dconfig.resource=$res"))
 Global / cancelable := false // ctrl-c
 
-val AkkaVersion = "2.8.2"
+val AkkaVersion = "2.8.5"
 val AkkaHttpVersion = "10.5.2"
 val AkkaManagementVersion = "1.4.1"
 
@@ -42,7 +42,7 @@ val AlpakkaKafkaVersion = "4.0.2"
 // tag::remove-akka-projection-version[]
 val AkkaProjectionVersion = "1.4.0"
 // end::remove-akka-projection-version[]
-val AkkaDiagnosticsVersion = "2.0.0"
+val AkkaDiagnosticsVersion = "2.0.1"
 
 // tag::remove-grpc-plugin[]
 enablePlugins(AkkaGrpcPlugin)

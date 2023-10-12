@@ -23,9 +23,7 @@ If you are unfamiliar with the project or with asciidoc, please read the contrib
 
 ## Antora extension
 
-Find some hints about the Lightbend Antora theme at https://lightbend.github.io/antora-supplemental-ui-lightbend-theme/build/site/index.html
-
-The theme sources are in a Lightbend-private project at https://github.com/lightbend/antora-supplemental-ui-lightbend-theme
+Find some hints about the Lightbend Antora theme at https://lightbend.github.io/antora-v3-lightbend-theme/build/site/index.html
 
 ## Contributing to the Akka Documentation
 
@@ -33,7 +31,7 @@ Detailed information about working with the documentation is provided in the [do
 
 ## Building the Documentation
 
-This part of the Akka documentation is built using [Antora](https://docs.antora.org/antora/2.3/), from asciidoc sources.
+This part of the Akka documentation is built using [Antora](https://docs.antora.org/antora/latest/), from asciidoc sources.
 The building process is managed by `make` using the [makefile](./Makefile) script.
 
 
